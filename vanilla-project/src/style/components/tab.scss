@@ -1,0 +1,35 @@
+@use 'global/base';
+@use 'global/colors';
+
+@mixin mobile {
+    @media (max-width: 767px) { @content; }
+  }
+
+.tab {
+    height: 8rem; 
+    width: 10rem; 
+    border: none;
+    outline: none; 
+    box-shadow: none;
+    background-color: var(--app-bg);
+    color: rgba(128, 128, 128, 0.219);
+    border-radius: 3rem;
+    font-size: 2.5rem;
+
+    &:hover {
+        color: var(--text-secondary-promo-color);
+    }
+
+    &:active {
+        color: var(--text-color);
+    }
+
+    @include mobile{
+        height: 4rem; 
+        width: 6rem;
+        font-size: 1.5rem;
+        &:hover {
+            color: inherit;
+        }
+    }
+}

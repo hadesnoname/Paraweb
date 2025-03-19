@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="")
+    body 
+mixin pagination(current, total)
+  nav.pagination
+    ul
+      li(class=current == 1 ? 'disabled' : '')
+        a(href='#') ‹
+      - for (var i = 1; i <= total; i++)
+        li(class=current == i ? 'active' : '')
+          a(href='#')= i
+      li(class=current == total ? 'disabled' : '')
+        a(href='#') ›
+
++pagination(1, 12)

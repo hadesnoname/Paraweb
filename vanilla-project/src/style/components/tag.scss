@@ -1,0 +1,35 @@
+@use 'global/base';
+@use 'global/colors';
+
+@mixin mobile {
+    @media (max-width: 767px) { @content; }
+  }
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    border: none;
+    background: var(--card-color);
+    color: var(--text-color);
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.877);
+        color: var(--text-secondary-promo-color);
+    }
+
+    &:active {
+        background: var(--card-color);
+        color: var(--text-color);
+    }
+
+    @include mobile {
+        &:hover {
+            color: inherit;
+        }
+    }
+}
+  

@@ -1,0 +1,146 @@
+@mixin mobile {
+  @media (max-width: 767px) { @content; }
+}
+
+@mixin text-h1 {
+    font-weight: 700;
+    font-size: 5.6rem;
+    line-height: 6.2rem;
+    @include mobile {
+      font-weight: 700;
+      font-size: 3.2rem;
+      line-height: 4rem;
+    }
+}
+
+@mixin text-h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    @include mobile {
+      font-weight: 700;
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+    }
+}
+
+@mixin text-h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  @include mobile {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+}
+
+@mixin text-h4 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  @include mobile {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+}
+
+@mixin text-accent {
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  @include mobile {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+
+@mixin text-numbers {
+  font-weight: 700;
+  font-size: 9.6rem;
+  line-height: 10.4rem;
+  @include mobile {
+    font-weight: 700;
+    font-size: 5.6rem;
+    line-height: 6.2rem;
+  }
+}
+
+@mixin text-button {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  @include mobile {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
+
+@mixin text-tab {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  @include mobile {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}
+
+@mixin text-body {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  @include mobile {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+@mixin text-body-bold {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  @include mobile {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+@mixin text-body-small {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.0rem;
+  @include mobile {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+}
+
+@mixin text-body-small-bold {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.0rem;
+  @include mobile {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+}
+
+@mixin text-caption {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  @include mobile {
+    font-weight: 500;
+    font-size: 1.0rem;
+    line-height: 1.2rem;
+  }
+}
