@@ -1,6 +1,21 @@
-@use 'components/buttons';
-@use 'components/tab';
-@use 'components/pagination';
-@use 'components/tag';
-@import '~normalize.css';
+@use '../../node_modules/normalize.css/normalize';
+
+@use 'utils/typography' as utils;
+
+@use 'global/base';
+@use 'global/breakpoints';
+@use 'global/typography';
+@use 'global/colors';
+
+@use 'components/button-main';
+@use 'components/button-headline';
+@use 'components/button-menu';
+
+
+* {
+    padding: 2rem;
+
+}
+
+
 

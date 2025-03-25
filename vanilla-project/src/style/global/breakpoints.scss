@@ -2,42 +2,27 @@ $tablet: 1023px;
 $mobile: 767px;
 $from-mobile: $mobile + 1px;
 $from-tablet: $tablet + 1px;
+
 @mixin tablet {
   @media (max-width: $tablet) {
     @content;
   }
 }
+
 @mixin mobile {
   @media (max-width: $mobile) {
     @content;
   }
 }
+
 @mixin from-tablet {
   @media (min-width: $from-tablet) {
     @content;
   }
 }
+
 @mixin from-mobile {
   @media (min-width: $from-mobile) {
     @content;
   }
-}
-
-.my-component {
-    display: block;    
-    
-    &__picture {
-        width: 30rem;        
-        
-        @include --mobile {
-            width: 100%;        
-        }
-    }
-    &__content {
-        width: 100%;        
-        
-        @include --from-tablet {
-            width: 78rem;        
-        }
-    }
 }
