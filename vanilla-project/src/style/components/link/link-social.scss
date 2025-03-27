@@ -1,0 +1,29 @@
+.link-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.5rem;
+    height: 2.4rem;
+    .link-social-vk {
+      width: 2.4rem;
+      height: 2.4rem;
+      padding: 0.4rem;  
+    }
+    .link-social-a {
+        text-decoration: none;
+        font-family: var(--main-font);
+        width: 2.9rem;
+        height: 2rem;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: var(--text-color);
+        padding: 20%;
+        &:hover {
+            color: var(--ultramarine-default-color);
+        }
+        &:active {
+            color: var(--ultramarine-dark-color);
+        }
+    }
+}

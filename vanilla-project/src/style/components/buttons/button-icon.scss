@@ -1,0 +1,76 @@
+.button-icon-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 1.6rem;
+    padding: 0.8rem;
+    gap: 1rem;
+    background-color: var(--gray-color-4);
+    border: transparent;
+    .button-icon-app-vector {
+        width: 1.6rem;
+        height: 1.6rem;
+        padding: 0%;
+        background: transparent;
+        border: transparent;
+        cursor: pointer;
+    }
+
+    &:hover {
+        background-color: var(--gray-color-5);
+    }
+
+    &:active {
+        background-color: var(--gray-color-5);
+    }
+
+    &:disabled {
+        background: transparent;
+        border: 2px solid var(--border-color);
+        .button-icon-vector {
+            content: url("/assets/svg/icon_svg/button-icon-disabled.svg");
+        } 
+    }
+
+    &__card{
+        @extend .button-icon-app;
+        background-color: var(--gray-color-2);
+
+        &:hover {
+            background-color: var(--gray-color-3);
+        }
+        &:active {
+            background-color: var(--gray-color-3);
+        }
+
+        &:disabled {
+            background: transparent;
+            border: 2px solid var(--border-color);
+            .button-icon-vector {
+                content: url("/assets/svg/icon_svg/button-icon-disabled.svg");
+            } 
+        }
+    }
+
+    &__contrast{
+        @extend .button-icon-app;
+        background-color: rgba(255, 255, 255, 0.2);
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+        &:active {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        &:disabled {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            .button-icon-vector {
+                content: url("assets/svg/icon_svg/button-icon-contrast-disabled.svg");
+            } 
+        }
+    }
+}

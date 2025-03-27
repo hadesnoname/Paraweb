@@ -7,14 +7,33 @@
 @use 'global/typography';
 @use 'global/colors';
 
-@use 'components/button-main';
-@use 'components/button-headline';
-@use 'components/button-menu';
+@use 'components/buttons/button-main';
+@use 'components/buttons/button-headline';
+@use 'components/buttons/button-menu';
+@use 'components/buttons/button-icon';
+@use 'components/buttons/button-footer';
+@use 'components/buttons/button-bookmark';
+@use 'components/buttons/button-video';
+
+@use 'components/tab/tab';
+
+@use 'components/pagination/pagination';
+
+@use 'components/tag/tag-educational-materials';
+@use 'components/tag/tag-event';
+@use 'components/tag/tag-event-variants';
+
+@use 'components/link/link-icon';
+@use 'components/link/link-text';
+@use 'components/link/link-social';
+
+@use 'components/file/file';
+@use 'components/alert/alert';
+
 
 
 * {
     padding: 2rem;
-
 }
 
 

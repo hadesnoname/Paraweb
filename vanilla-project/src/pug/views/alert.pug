@@ -1,0 +1,16 @@
+extends layout.pug 
+
+block content
+  - var alertVariants = ['alert', 'alert__error']
+
+  div.alert(class=classes class=['alert'])
+    img.alert-img(src="/assets/svg/alert_svg/alert_succes.svg", alt="")
+    p.alert-text Text 
+    button.alert-close
+      img(src="/assets/svg/alert_svg/alert_x.svg", alt="")
+      
+  div.alert__error(class=classes class=['alert__error'])
+    img.alert-img(src="/assets/svg/alert_svg/alert_error.svg", alt="")
+    p.alert-text Text 
+    button.alert-close
+      img(src="/assets/svg/alert_svg/alert_x.svg", alt="")

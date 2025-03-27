@@ -1,0 +1,64 @@
+.headline {
+    width: 35.1rem;
+    height: 5.2rem;
+    display: flex;
+    align-items: center;
+    &-p {
+        width: 23.9rem;
+        height: 6.2rem;
+        padding: 0%;
+        font-family: var(--main-font);
+        font-size: 5.6rem;
+        line-height: 6.2rem;
+        letter-spacing: 0%;
+        color: var(--text-color);
+
+        &:disabled {
+            color: var(--text-blind-color);
+        }
+
+        
+    }
+
+    &-button {
+        width: 5.6rem;
+        height: 5.6rem;
+        border-radius: 1.6rem;
+        padding: 0;
+        border: 2px solid var(--card-color);
+        background-color: var(--card-color);
+        cursor: pointer;
+        display: flex;  
+        justify-content: center; 
+        align-items: center; 
+        .vector {
+            background: transparent;
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+
+        &:hover {
+            background-color: var(--ultramarine-default-color);
+            border: 2px solid var(--ultramarine-default-color);
+            .vector {
+                content: url("/assets/svg/headline_svg/arrow-down-right-white.svg");
+            }            
+        }
+        &:active {
+            background-color: var(--ultramarine-dark-color);
+            border: 2px solid var(--ultramarine-dark-color);
+            .vector {
+                content: url("/assets/svg/headline_svg/arrow-down-right-white.svg");
+            } 
+        }
+
+        &:disabled {
+            background: transparent;
+            border: 2px solid var(--border-color);
+            .vector {
+                content: url("/assets/svg/headline_svg/arrow-down-right-disabled.svg");
+            } 
+        }
+    }
+    
+}

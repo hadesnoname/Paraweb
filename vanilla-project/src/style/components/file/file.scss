@@ -1,0 +1,54 @@
+.file {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 44rem;
+    height: 9.2rem;
+    gap: 2rem;
+    padding: 0%;
+    
+    .file-img {
+        padding: 0%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    .file-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: var(--main-font);
+        padding: 0%;
+        padding-left: 15%;
+        padding-top: 2%;
+        .file-a {
+            padding: 0%;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: var(--ultramarine-default-color);
+        }
+        .file-size {
+            padding: 0%;
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: var(--text-secondary-promo-color);
+        }
+    }
+
+    &:hover {
+        .file-img {
+            content: url("/assets/svg/file_svg/file_hover.svg");
+            width: 4rem;
+            height: 4rem;
+        }
+        .file-a {
+            text-decoration: underline;
+        }
+    }
+}

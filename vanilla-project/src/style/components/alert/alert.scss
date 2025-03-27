@@ -1,0 +1,46 @@
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    width: 44rem;
+    height: 7.2rem;
+    border-radius: 2.4rem;
+    background-color: var(--card-color);
+    border: 0.2rem solid var(--electric-green-default-color);
+    .alert-img {
+        background: transparent;
+        border: transparent;
+        width: 2.4rem;
+        height: 2.4rem;
+        padding: 0%;       
+    }
+    .alert-text {
+        width: 30rem;
+        height: 2rem;
+        font-family: var(--main-font);
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: var(--text-color);
+    }
+    .alert-close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: transparent;
+        cursor: pointer;
+        width: 2.4rem;
+        height: 2.4rem;
+        padding: 0%;
+        img {
+            padding: 0%;
+        }
+    }
+
+    &__error {
+        @extend .alert;
+        border: 0.2rem solid var(--sual-red-default-color);
+    }
+}

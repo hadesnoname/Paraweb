@@ -1,0 +1,62 @@
+.tag-event {
+    &-base {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.8rem;
+      padding: 0.6rem 1.2rem;
+      gap: 1rem;
+      margin-top: 0.5rem;
+      font-family: var(--main-font);
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      cursor: pointer;
+      border: 0.2rem solid transparent;
+    }
+  
+    &-education {
+      @extend .tag-event-base;
+      width: 10.7rem;
+      height: 3.2rem;
+      background-color: var(--cyan-light-color-2);
+      border-color: var(--cyan-light-color-2);
+      color: var(--cyan-default-color);
+    }
+  
+    &-study {
+      @extend .tag-event-base;
+      width: 6.5rem;
+      height: 3.2rem;
+      background-color: var(--purple-light-color);
+      border-color: var(--purple-light-color);
+      color: var(--purple-default-color);
+    }
+  
+    &-science {
+      @extend .tag-event-base;
+      width: 6.7rem;
+      height: 3.2rem;
+      background-color: var(--electric-green-light-color-2);
+      border-color: var(--electric-green-light-color-2);
+      color: var(--electric-green-default-color);
+    }
+  
+    &-creativity {
+      @extend .tag-event-base;
+      width: 10.7rem;
+      height: 3.2rem;
+      background-color: var(--sual-red-light-2-color);
+      border-color: var(--sual-red-light-2-color);
+      color: var(--sual-red-light-1-color);
+    }
+  
+    &-sport {
+      @extend .tag-event-base;
+      width: 6.8rem;
+      height: 3.2rem;
+      background-color: var(--suai-blue-light-color);
+      border-color: var(--suai-blue-light-color);
+      color: var(--suai-blue-default-color);
+    }
+  }

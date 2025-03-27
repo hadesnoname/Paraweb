@@ -1,0 +1,36 @@
+.link-text-s {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.8rem;
+    height: 2rem;
+    text-decoration: none;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--ultramarine-default-color);
+    
+    &:hover {
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-underline-offset: 0%;
+        text-decoration-thickness: 0%;
+    }
+    
+    &:active {
+        color: var(--ultramarine-dark-color);
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-underline-offset: 0%;
+        text-decoration-thickness: 0%;
+    }
+
+    &__l {
+        @extend .link-text-s;
+        width: 3.5rem;
+        height: 2.6rem;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+    }
+}

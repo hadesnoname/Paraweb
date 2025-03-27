@@ -1,0 +1,30 @@
+.button-bookmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 1.6rem;
+    gap: 1rem;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: rgba(255, 255, 255, 0.2);
+    .button-bookmark-img {
+        background: transparent;
+        border: transparent;
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    &:hover {
+        background-color: var(--ultramarine-default-color);
+    }
+
+    &:active {
+        background-color: rgba(255, 255, 255, 0.2);
+
+        .button-bookmark-img {
+            content: url("/assets/svg/bookmark_svg/button-bookmark-acitve.svg");
+        }
+    }
+}

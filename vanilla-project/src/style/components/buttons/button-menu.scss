@@ -1,0 +1,49 @@
+.button-menu-item {
+    width: 10rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    &:hover {
+        border-radius: 1.2rem;
+        background-color: var(--gray-color-4);
+    }
+    
+    &:active {
+        .button-menu-text{
+            color: var(--ultramarine-default-color);
+        }
+    }
+
+
+    .button-menu-text {
+        width: 8.3rem;
+        height: 2.4rem;
+        font-family: var(--main-font);
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        letter-spacing: 0%;
+        padding: 0%;
+        
+    }
+    .button-menu-arrow-down {
+        display: flex;       
+        align-items: center;
+        justify-content: center;
+        width: 1.6rem;
+        height: 1.6rem;
+        padding: 0%;
+        background: transparent;
+        border: transparent;
+        cursor: pointer;
+        .vector-menu {
+            padding: 0%;
+        }
+
+        &:active {
+            .vector-menu {
+                content: url("/assets/svg/menu_svg/vector_menu_blue.svg");
+            }
+        }
+    }
+}

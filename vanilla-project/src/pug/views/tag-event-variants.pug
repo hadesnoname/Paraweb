@@ -1,0 +1,11 @@
+extends layout.pug
+
+mixin getTagName(tag)
+  - var names = {'education': 'Воспитание', 'study': 'Учеба', 'science': 'Наука', 'creativity': 'Творчество', 'sport': 'Спорт'}
+  | #{names[tag]}
+
+block content
+  - var tags = ['education', 'study', 'science', 'creativity', 'sport']
+  each tag in tags
+    button(class=`tag-event-${tag}`)
+      +getTagName(tag)

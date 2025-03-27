@@ -1,0 +1,47 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .pagination-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4.8rem;
+        height: 4.8rem;
+        border-radius: 1.6rem;
+        padding: 1.2rem;
+        gap: 1rem;
+        background: transparent;
+        border: transparent;
+    
+        &:hover {
+            background-color: var(--gray-color-4);
+        }
+    
+        &:active {
+            background-color: var(--gray-color-5);
+        }
+    
+        .pagination-number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 2.4rem;
+            height: 2.4rem;
+            font-family: var(--main-font);
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            letter-spacing: 0%;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+        .pagination-back, .pagination-next {
+            display: flex;       
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+

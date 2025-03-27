@@ -1,0 +1,28 @@
+.tag-event {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.9rem;
+    height: 3.2rem;
+    border-radius: 0.8rem;
+    padding: 0.6rem 1.2rem;
+    gap: 1rem;
+    background-color: var(--gray-color-3);
+    border: 0.2rem solid var(--gray-color-3);
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--text-secondary-promo-color);
+    margin-top: 2rem;
+
+    &:hover {
+        background-color: var(--gray-color-4);
+        border: 0.2rem solid var(--gray-color-4);
+    }
+
+    &:active {
+        background-color: var(--gray-color-3);
+        border: 0.2rem solid var(--gray-color-3);
+    }
+}

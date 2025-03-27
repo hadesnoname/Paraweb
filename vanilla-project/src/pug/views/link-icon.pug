@@ -1,0 +1,12 @@
+extends layout.pug 
+
+block content
+  - var linkIconVariants = ['link-icon-s', 'link-icon-s__l']
+
+  div.link-icon-s(class=classes class=['link-icon-s'])
+    img.link-icon-s-img(src="assets/svg/icon_svg/link-icon.svg", alt="")
+    a.link-icon-s-linked(href="#") Link
+
+  div.link-icon-s__l(class=classes class=['link-icon-s__l'])
+    img.link-icon-s-img(src="assets/svg/icon_svg/link-icon.svg", alt="")
+    a.link-icon-s-linked(href="#") Link
