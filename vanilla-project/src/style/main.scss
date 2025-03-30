@@ -1,40 +1,36 @@
-@use '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/normalize.css/normalize';
+@import 'reset';
 
-@use 'utils/typography' as utils;
+@import 'utils/typography';
 
-@use 'global/base';
-@use 'global/breakpoints';
-@use 'global/typography';
-@use 'global/colors';
+@import 'global/base';
+@import 'global/breakpoints';
+@import 'global/typography';
+@import 'global/colors';
 
-@use 'components/buttons/button-main';
-@use 'components/buttons/button-headline';
-@use 'components/buttons/button-menu';
-@use 'components/buttons/button-icon';
-@use 'components/buttons/button-footer';
-@use 'components/buttons/button-bookmark';
-@use 'components/buttons/button-video';
+@import 'components/buttons/button-main';
+@import 'components/buttons/button-headline';
+@import 'components/buttons/button-menu';
+@import 'components/buttons/button-icon';
+@import 'components/buttons/button-footer';
+@import 'components/buttons/button-bookmark';
+@import 'components/buttons/button-video';
 
-@use 'components/tab/tab';
+@import 'components/tab/tab';
 
-@use 'components/pagination/pagination';
+@import 'components/pagination/pagination';
 
-@use 'components/tag/tag-educational-materials';
-@use 'components/tag/tag-event';
-@use 'components/tag/tag-event-variants';
+@import 'components/tag/tag-educational-materials';
+@import 'components/tag/tag-event';
+@import 'components/tag/tag-event-variants';
 
-@use 'components/link/link-icon';
-@use 'components/link/link-text';
-@use 'components/link/link-social';
+@import 'components/link/link-icon';
+@import 'components/link/link-text';
+@import 'components/link/link-social';
 
-@use 'components/file/file';
-@use 'components/alert/alert';
+@import 'components/file/file';
+@import 'components/alert/alert';
 
-
-
-* {
-    padding: 2rem;
-}
 
 
 
