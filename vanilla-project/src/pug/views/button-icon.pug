@@ -1,5 +1,8 @@
-extends layout.pug 
-
+mixin 
+  - 
+  var {
+    variant = {'primary'}
+  }
 block content 
   - var button = ['button-icon-app', 'button-icon-app__card', 'button-icon-app__contrast']
   button.button-icon-app(class=classes class=['button-icon-app'])
