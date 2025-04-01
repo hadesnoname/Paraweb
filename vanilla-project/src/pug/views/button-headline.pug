@@ -1,7 +1,8 @@
 extends layout.pug 
 
 block content 
-  div.headline
+  .headline
     p.headline-p Headline
     button.headline-button 
-      img.vector(src="assets/svg/headline_svg/arrow-down-right.svg", alt="")
+      svg.headline-icon
+        use(href="assets/svg/symbol/sprite.svg#arrow-down-right")

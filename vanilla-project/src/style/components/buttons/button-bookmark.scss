@@ -9,12 +9,12 @@
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.2);
     border: rgba(255, 255, 255, 0.2);
-    .button-bookmark-img {
-        background: transparent;
-        border: transparent;
-        width: 3.2rem;
-        height: 3.2rem;
-    }
+    .button-bookmark-icon {
+        fill: currentColor; // Наследует цвет текста
+        &:hover {
+          fill: red; // Меняет цвет при наведении
+        }
+      }
 
     &:hover {
         background-color: var(--ultramarine-default-color);

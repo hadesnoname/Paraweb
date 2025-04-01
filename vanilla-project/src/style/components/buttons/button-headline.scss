@@ -1,64 +1,70 @@
 .headline {
-    width: 35.1rem;
-    height: 5.2rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    gap: 3.2rem;
+    position: absolute;
+    width: 35.1rem;
+    height: 6.2rem;
     &-p {
         width: 23.9rem;
         height: 6.2rem;
-        padding: 0%;
         font-family: var(--main-font);
+        font-weight: 700;
         font-size: 5.6rem;
         line-height: 6.2rem;
-        letter-spacing: 0%;
         color: var(--text-color);
 
         &:disabled {
             color: var(--text-blind-color);
         }
-
-        
     }
 
     &-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1.2rem;
         width: 5.6rem;
         height: 5.6rem;
+        cursor: pointer;
         border-radius: 1.6rem;
-        padding: 0;
         border: 2px solid var(--card-color);
         background-color: var(--card-color);
-        cursor: pointer;
-        display: flex;  
-        justify-content: center; 
-        align-items: center; 
-        .vector {
-            background: transparent;
-            width: 3.2rem;
-            height: 3.2rem;
+
+        .headline-icon {
+            stroke: var(--ultramarine-default-color);
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
         }
 
         &:hover {
             background-color: var(--ultramarine-default-color);
             border: 2px solid var(--ultramarine-default-color);
-            .vector {
-                content: url("/assets/svg/headline_svg/arrow-down-right-white.svg");
-            }            
+            .headline-icon {
+                stroke: var(--card-color);
+                transform: rotate(45deg);
+            }           
         }
         &:active {
             background-color: var(--ultramarine-dark-color);
             border: 2px solid var(--ultramarine-dark-color);
-            .vector {
-                content: url("/assets/svg/headline_svg/arrow-down-right-white.svg");
+            .headline-icon {
+                stroke: var(--card-color);
             } 
         }
 
         &:disabled {
             background: transparent;
             border: 2px solid var(--border-color);
-            .vector {
-                content: url("/assets/svg/headline_svg/arrow-down-right-disabled.svg");
+            .headline-icon {
+                stroke: var(--text-blind-color);
+                transform: rotate(-90deg);
             } 
         }
     }
     
 }
+
+

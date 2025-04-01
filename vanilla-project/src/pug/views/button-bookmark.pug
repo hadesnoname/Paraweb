@@ -2,4 +2,5 @@ extends layout.pug
 
 block content
   button.button-bookmark
-    img.button-bookmark-image(src="/assets/svg/bookmark_svg/button-bookmark.svg", alt="")
+    svg.button-bookmark-icon(width="24" height="24")
+      use(xlink:href="/assets/svg/sprite.svg#button-bookmark")
