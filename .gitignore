@@ -17,4 +17,4 @@ node_modules
 example/output
 test/coverage
 test/junit
-build/
+vanilla-project/build
