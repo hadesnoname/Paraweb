@@ -559,64 +559,100 @@ html {
 }
 
 .button-menu-item {
-  width: 10rem;
-  height: 1.8rem;
   display: flex;
+  justify-content: center;
   align-items: center;
+  position: absolute;
+  width: 13.5rem;
+  height: 4.8rem;
+  border-radius: 1.2rem;
 }
 .button-menu-item:hover {
-  border-radius: 1.2rem;
   background-color: var(--gray-color-4);
 }
-.button-menu-item:active .button-menu-text {
-  color: var(--ultramarine-default-color);
+@media (max-width: 767px) {
+  .button-menu-item:hover {
+    background-color: transparent;
+  }
+}
+@media (max-width: 1023px) {
+  .button-menu-item:hover {
+    background-color: transparent;
+  }
+}
+@media (max-width: 767px) {
+  .button-menu-item {
+    width: 12.1rem;
+    height: 4.6rem;
+  }
+  .button-menu-item:active {
+    color: var(--ultramarine-default-color);
+  }
 }
 .button-menu-item .button-menu-text {
   width: 8.3rem;
   height: 2.4rem;
   font-family: var(--main-font);
+  color: var(--text-color);
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2.4rem;
-  letter-spacing: 0%;
-  padding: 0%;
+}
+@media (max-width: 767px) {
+  .button-menu-item .button-menu-text {
+    width: 7.3rem;
+    height: 2.2rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
 }
 .button-menu-item .button-menu-arrow-down {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .button-menu-item .button-menu-arrow-down {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+.button-menu-item .button-menu-arrow-down .button-menu-icon {
   width: 1.6rem;
   height: 1.6rem;
-  padding: 0%;
-  background: transparent;
-  border: transparent;
-  cursor: pointer;
+  stroke: var(--text-secondary-promo-color);
+  padding: 0;
 }
-.button-menu-item .button-menu-arrow-down .vector-menu {
-  padding: 0%;
+.button-menu-item .button-menu-arrow-down .button-menu-icon:hover {
+  stroke: var(--text-color);
 }
-.button-menu-item .button-menu-arrow-down:active .vector-menu {
-  content: url("/assets/svg/menu_svg/vector_menu_blue.svg");
+.button-menu-item .button-menu-arrow-down .button-menu-icon:active {
+  stroke: var(--ultramarine-default-color);
+}
+.button-menu-item:active .button-menu-text {
+  color: var(--ultramarine-default-color);
 }
 
 .button-icon-app, .button-icon-app__contrast, .button-icon-app__card {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 4.8rem;
   height: 4.8rem;
   border-radius: 1.6rem;
-  padding: 0.8rem;
-  gap: 1rem;
+  position: absolute;
   background-color: var(--gray-color-4);
-  border: transparent;
+  border: var(--gray-color-4);
 }
-.button-icon-app .button-icon-app-vector, .button-icon-app__contrast .button-icon-app-vector, .button-icon-app__card .button-icon-app-vector {
-  width: 1.6rem;
-  height: 1.6rem;
-  padding: 0%;
-  background: transparent;
-  border: transparent;
+.button-icon-app .button-chevron-right, .button-icon-app__contrast .button-chevron-right, .button-icon-app__card .button-chevron-right {
+  width: 3.2rem;
+  height: 3.2rem;
   cursor: pointer;
 }
 .button-icon-app:hover, .button-icon-app__contrast:hover, .button-icon-app__card:hover {
@@ -1129,4 +1165,9 @@ html {
 }
 .alert__error {
   border: 0.2rem solid var(--sual-red-default-color);
+}
+
+* {
+  left: 3rem;
+  top: 3rem;
 }

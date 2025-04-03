@@ -1,49 +1,77 @@
 .button-menu-item {
-    width: 10rem;
-    height: 1.8rem;
     display: flex;
+    justify-content: center;
     align-items: center;
+    position: absolute;
+    width: 13.5rem;
+    height: 4.8rem;
+    border-radius: 1.2rem;
+
     &:hover {
-        border-radius: 1.2rem;
         background-color: var(--gray-color-4);
-    }
-    
-    &:active {
-        .button-menu-text{
-            color: var(--ultramarine-default-color);
+        @include mobile {
+            background-color: transparent;
+        }
+        @include tablet {
+            background-color: transparent;
         }
     }
 
+    @include mobile {
+        width: 12.1rem;
+        height: 4.6rem;
+        &:active {
+            color: var(--ultramarine-default-color);
+        }
+    }
 
     .button-menu-text {
         width: 8.3rem;
         height: 2.4rem;
         font-family: var(--main-font);
+        color: var(--text-color);
         font-weight: 500;
         font-size: 1.6rem;
         line-height: 2.4rem;
-        letter-spacing: 0%;
-        padding: 0%;
-        
+        @include mobile {
+            width: 7.3rem;
+            height: 2.2rem;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
     }
     .button-menu-arrow-down {
-        display: flex;       
-        align-items: center;
+        display: flex;
         justify-content: center;
-        width: 1.6rem;
-        height: 1.6rem;
-        padding: 0%;
-        background: transparent;
-        border: transparent;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
         cursor: pointer;
-        .vector-menu {
-            padding: 0%;
+        background: none;
+        border: none;
+        padding: 0;
+        @include mobile {
+            width: 1.6rem;
+            height: 1.6rem;
         }
-
-        &:active {
-            .vector-menu {
-                content: url("/assets/svg/menu_svg/vector_menu_blue.svg");
+        .button-menu-icon {
+            width: 1.6rem;
+            height: 1.6rem;
+            stroke: var(--text-secondary-promo-color);
+            padding: 0;
+            &:hover {
+                stroke: var(--text-color);
             }
+            
+            &:active {
+                stroke: var(--ultramarine-default-color);
+            }
+        }
+    }
+
+    &:active {
+        .button-menu-text{
+            color: var(--ultramarine-default-color);
         }
     }
 }

@@ -1,20 +1,17 @@
 .button-icon-app {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 4.8rem;
     height: 4.8rem;
     border-radius: 1.6rem;
-    padding: 0.8rem;
-    gap: 1rem;
+    position: absolute;
     background-color: var(--gray-color-4);
-    border: transparent;
-    .button-icon-app-vector {
-        width: 1.6rem;
-        height: 1.6rem;
-        padding: 0%;
-        background: transparent;
-        border: transparent;
+    border: var(--gray-color-4);
+    .button-chevron-right {
+        width: 3.2rem;
+        height: 3.2rem;
+        
         cursor: pointer;
     }
 
